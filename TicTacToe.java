@@ -18,6 +18,15 @@ public class TicTacToe extends javax.swing.JFrame {
     private int xcount = 0;
     private int ocount =0;
     boolean checker;
+    private int count1=0;
+    private int count2=0;
+    private int count3=0;
+    private int count4=0;
+    private int count5=0;
+    private int count6=0;
+    private int count7=0;
+    private int count8=0;
+    private int count9=0;
     
     public TicTacToe() {
         initComponents();
@@ -59,14 +68,23 @@ public class TicTacToe extends javax.swing.JFrame {
             gameScore();
             //RESETActionPerformed();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         
         else if(b4==("X") && b5 == ("X") && b6 == "X")
@@ -78,14 +96,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;             
         }
         else if(b7==("X") && b8 == ("X") && b9 == "X")
         {
@@ -96,14 +123,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;            
         }
         else if(b1==("X") && b4 == ("X") && b7 == "X")
         {
@@ -114,14 +150,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         else if(b4==("X") && b5 == ("X") && b6 == "X")
         {
@@ -132,14 +177,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         else if(b3==("X") && b5 == ("X") && b7 == "X")
         {
@@ -150,14 +204,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;              
         }
         else if(b1==("X") && b5 == ("X") && b9 == "X")
         {
@@ -168,14 +231,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+             count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;              
         }
         else if(b2==("X") && b5 == ("X") && b8 == "X")
         {
@@ -186,14 +258,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;             
         }
         else if(b3==("X") && b6 == ("X") && b9 == "X")
         {
@@ -204,14 +285,23 @@ public class TicTacToe extends javax.swing.JFrame {
             xcount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         
         else if(b1==("0") && b2 == ("0") && b3 == "0")
@@ -223,14 +313,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         
         else if(b4==("0") && b5 == ("0") && b6 == "0")
@@ -242,14 +341,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;              
         }
         else if(b7==("0") && b8 == ("0") && b9 == "0")
         {
@@ -260,14 +368,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         else if(b1==("0") && b4 == ("0") && b7 == "0")
         {
@@ -278,14 +395,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;              
         }
         else if(b3==("0") && b5 == ("0") && b7 == "0")
         {
@@ -296,14 +422,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         else if(b1==("0") && b5 == ("0") && b9 == "0")
         {
@@ -314,14 +449,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         else if(b2==("0") && b5 == ("0") && b8 == "0")
         {
@@ -332,14 +476,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;              
         }
         else if(b3==("0") && b6 == ("0") && b9 == "0")
         {
@@ -350,14 +503,23 @@ public class TicTacToe extends javax.swing.JFrame {
             ocount++;
             gameScore();
             jButton6.setText("");
-        jButton7.setText("");
-        jButton8.setText("");
-        jButton1.setText("");
-        jButton4.setText("");
-        jButton2.setText("");
-        jButton5.setText("");
-        jButton3.setText("");
-        jButton9.setText("");
+            jButton7.setText("");
+            jButton8.setText("");
+            jButton1.setText("");
+            jButton4.setText("");
+            jButton2.setText("");
+            jButton5.setText("");
+            jButton3.setText("");
+            jButton9.setText("");
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;               
         }
         
         
@@ -684,137 +846,214 @@ public class TicTacToe extends javax.swing.JFrame {
         jButton5.setBackground(Color.LIGHT_GRAY);
         jButton3.setBackground(Color.LIGHT_GRAY);
         jButton9.setBackground(Color.LIGHT_GRAY);
-        
+            count1=0;
+            count2=0;
+            count3=0;
+            count4=0;
+            count5=0;
+            count6=0;
+            count7=0;
+            count8=0;
+            count9=0;           
         
         
     }//GEN-LAST:event_RESETActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jButton1.setText(startGame);
+        if(count1<1){
+            jButton1.setText(startGame);
+            choose_a_player();
+            count1=1;
+        }
         
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButtonnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonnActionPerformed
         // TODO add your handling code here:
+        Player1.setText("0");
+        Player0.setText("0");
+        
+        
+        jButton6.setText("");
+        jButton7.setText("");
+        jButton8.setText("");
+        jButton1.setText("");
+        jButton4.setText("");
+        jButton2.setText("");
+        jButton5.setText("");
+        jButton3.setText("");
+        jButton9.setText("");
+        
+        jButton6.setBackground(Color.LIGHT_GRAY);
+        jButton7.setBackground(Color.LIGHT_GRAY);
+        jButton8.setBackground(Color.LIGHT_GRAY);
+        jButton1.setBackground(Color.LIGHT_GRAY);
+        jButton4.setBackground(Color.LIGHT_GRAY);
+        jButton2.setBackground(Color.LIGHT_GRAY);
+        jButton5.setBackground(Color.LIGHT_GRAY);
+        jButton3.setBackground(Color.LIGHT_GRAY);
+        jButton9.setBackground(Color.LIGHT_GRAY);
+ 
+        count1=0;
+        count2=0;
+        count3=0;
+        count4=0;
+        count5=0;
+        count6=0;
+        count7=0;
+        count8=0;
+        count9=0;        
     }//GEN-LAST:event_jButtonnActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        jButton2.setText(startGame);
+         if(count2<1){
+            jButton2.setText(startGame);
+            choose_a_player();
+            count2=1;
+        }         
         
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        jButton6.setText(startGame);
-        
+        //jButton6.setText(startGame);
+        if(count6<1){
+            jButton6.setText(startGame);
+            choose_a_player();
+            count6=1;
+        }          
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        jButton3.setText(startGame);
+        if(count3<1){
+            jButton3.setText(startGame);
+            choose_a_player();
+            count3=1;
+        }  
         
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        jButton4.setText(startGame);
-        
+        //jButton4.setText(startGame);
+        if(count4<1){
+            jButton4.setText(startGame);
+            choose_a_player();
+            count4=1;
+        }          
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        jButton5.setText(startGame);
-        
+       // jButton5.setText(startGame);
+        if(count5<1){
+            jButton5.setText(startGame);
+            choose_a_player();
+            count5=1;
+        }          
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        jButton7.setText(startGame);
-        
+        //jButton7.setText(startGame);
+        if(count7<1){
+            jButton7.setText(startGame);
+            choose_a_player();
+            count7=1;
+        }          
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        jButton8.setText(startGame);
-        
+        //jButton8.setText(startGame);
+        if(count8<1){
+            jButton8.setText(startGame);
+            choose_a_player();
+            count8=1;
+        }          
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        jButton9.setText(startGame);
-        
+        //jButton9.setText(startGame);
+        if(count9<1){
+            jButton9.setText(startGame);
+            choose_a_player();
+            count9=1;
+        }          
         if(startGame.equalsIgnoreCase("X")){
             checker = false;
         }else{
             checker =   true;
         }
-        choose_a_player();
+        //choose_a_player();
         winningGame();
         
     }//GEN-LAST:event_jButton9ActionPerformed
