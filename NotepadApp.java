@@ -1,0 +1,184 @@
+package com.mycompany.notepadapp;
+
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+//import (link unavailable)*;
+
+public class NotepadApp extends JFrame {
+
+    private JTextArea textArea;
+    private JFileChooser fileChooser;
+    private boolean isSaved = true;
+    private String currentFile = "";
+
+    public NotepadApp() {
+        super("Notepad Application\t\t\tMADE BY ANKIT SINGH");
+        setBounds(100, 100, 800, 600);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                exitApplication();
+            }
+        });
+
+        textArea = new JTextArea();
+        textArea.setFont(new Font("Monospaced", Font.PLAIN, 20));
+        add(new JScrollPane(textArea), BorderLayout.CENTER);
+
+        fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Open File");
+
+        JMenuBar menuBar = new JMenuBar();
+        setJMenuBar(menuBar);
+
+        JMenu fileMenu = new JMenu("File");
+        menuBar.add(fileMenu);
+
+        JMenuItem newMenuItem = new JMenuItem("New");
+        newMenuItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                newFile();
+            }
+        });
+        fileMenu.add(newMenuItem);
+
+        JMenuItem openMenuItem = new JMenuItem("Open");
+        openMenuItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    openFile();
+                } catch (IOException ex) {
+                    Logger.getLogger(NotepadApp.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        });
+        fileMenu.add(openMenuItem);
+
+        JMenuItem saveMenuItem = new JMenuItem("Save");
+        saveMenuItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                saveFile();
+            }
+        });
+        fileMenu.add(saveMenuItem);
+
+        JMenuItem saveAsMenuItem = new JMenuItem("Save As");
+        saveAsMenuItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                saveAsFile();
+            }
+        });
+        fileMenu.add(saveAsMenuItem);
+
+        JMenuItem exitMenuItem = new JMenuItem("Exit");
+        exitMenuItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                exitApplication();
+            }
+        });
+        fileMenu.addSeparator();
+        fileMenu.add(exitMenuItem);
+    }
+
+    private void newFile() {
+        if (!isSaved) {
+            int result = JOptionPane.showConfirmDialog(this, "Do you want to save the current file?");
+            if (result == JOptionPane.YES_OPTION) {
+                saveFile();
+            }
+        }
+        textArea.setText("");
+        isSaved = true;
+        currentFile = "";
+    }
+
+    private void openFile() throws IOException {
+        if (!isSaved) {
+            int result = JOptionPane.showConfirmDialog(this, "Do you want to save the current file?");
+            if (result == JOptionPane.YES_OPTION) {
+                saveFile();
+            }
+        }
+        int result = fileChooser.showOpenDialog(this);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            textArea.setText(readFile(file));
+            isSaved = true;
+            currentFile = file.getAbsolutePath();
+        }
+    }
+
+    private void saveFile() {
+        if (currentFile.isEmpty()) {
+            saveAsFile();
+        } else {
+            try {
+                writeFile(new File(currentFile), textArea.getText());
+                isSaved = true;
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(this, "Error saving file: " + e.getMessage());
+            }
+        }
+    }
+
+    private void saveAsFile() {
+        int result = fileChooser.showSaveDialog(this);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            try {
+                writeFile(file, textArea.getText());
+                isSaved = true;
+                currentFile = file.getAbsolutePath();
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(this, "Error saving file: " + e.getMessage());
+            }
+        }
+    }
+
+    private void exitApplication() {
+        if (!isSaved) {
+            int result = JOptionPane.showConfirmDialog(this, "Do you want to save the current file?");
+            if (result == JOptionPane.YES_OPTION) {
+                saveFile();
+            }
+        }
+        System.exit(0);
+    }
+
+    private String readFile(File file) throws IOException {
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+        }
+        return content.toString();
+    }
+
+    private void writeFile(File file, String content) throws IOException {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+            writer.write(content);
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                NotepadApp app = new NotepadApp();
+                app.setVisible(true);
+            }
+        });
+    }
+}
+
